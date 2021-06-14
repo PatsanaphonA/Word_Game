@@ -1,0 +1,328 @@
+html {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+*{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 400;
+}
+
+@supports(font-variation-settings: "wght" 450) {
+    *{
+    font-family: 'Prompt', sans-serif;
+    font-weight: 450; 
+    } 
+}
+body {
+    font-family: 'Prompt', sans-serif;
+    background-color:#FCF0E7;
+    height: 100%;
+    width:auto;
+    overflow:hidden;
+}
+
+#stop {
+
+    border:1px solid #c0c0c0;
+    font-weight:bolder;
+    color: #FF8A18;
+}
+
+.button {
+    font-size: xx-large;
+    line-height: 50px;
+    border: none;
+}
+
+.navbar-custom {
+    background-color: #FF8A18;
+}
+
+/* change the brand and text color */
+.navbar-custom .navbar-brand,
+.navbar-custom .navbar-text {
+    color: rgb(255, 255, 255);
+}
+
+/* change the link color */
+.navbar-custom .navbar-nav .nav-link {
+    color: rgba(255,255,255);
+}
+
+/* change the color of active or hovered links */
+.navbar-custom .nav-item.active .nav-link,
+.navbar-custom .nav-item:hover .nav-link {
+    color: #ffffff;
+}
+
+.btn-colour-1{
+    color: #ffffff;
+    background-color:#FF8A18;
+    font-weight:bolder;
+    letter-spacing: 0.05em;
+    border:2px solid #c0c0c0;
+    border-radius: 12px;
+}
+
+.btn-colour-1:hover,
+.btn-colour-1:active,
+.btn-colour-1:focus,
+.btn-colour-1.active {
+  /* let's darken #004E64 a bit for hover effect */
+  background: #ff8308;
+  color: #ffffff;
+  border-color: #ff8308;
+}
+
+.Giveup{
+    color:#FF8A18;
+    
+}
+
+.restart{
+    color: #c0c0c0;
+    font-weight: bolder;
+    cursor:pointer;
+}
+.restart:hover{
+    color: #090836;
+
+}
+.pad70{
+    display:block;
+    padding:0px 70px;
+}
+.pad_left5{
+    padding-left: 5px;
+}
+.mgt30{
+    margin-top:30px;
+}
+.mgt15{
+    margin-top:15px;
+}
+.mgt10{
+    margin-top:10px;
+}
+.mgb20{
+    margin-bottom:20px;
+}
+.mgb10{
+    margin-bottom:10px;
+}
+.Text_Subject{
+    font-size: 64px;
+    font-weight: bolder;
+}
+.text_center{
+    text-align:center;
+}
+.Login{
+    float:right;
+    border:5px solid white;
+    border-radius: 24px;
+    background-color: white;
+    margin-left: 20px;
+    padding: 5px 30px;
+    text-align: center;
+    font-weight:bolder;
+}
+
+.Login_text{
+    color:#09091F;
+}
+
+.Login:hover{
+    color:#09091F;
+}
+
+.Login span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.3s;
+  }
+
+.Login span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+
+  .Login:hover span {
+    padding-right: 25px;
+  }
+  
+  .Login:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.Sign{
+    float:right;
+    border-style: hidden;
+    border-width:5px;
+    padding: 10px 20px;
+    text-align:center;
+    font-weight:bolder;
+}
+
+.Sign_text{
+    color:white;
+
+}
+.Sign:hover{
+    color:black;
+}
+
+
+.btn-primary.btn-custom{
+    background-color: #FF8A18;
+}
+.word_check{
+    border:2px solid #05051b;
+    border-radius:8px;
+}
+
+.sound_check{
+    border:2px solid #05051b;
+    border-radius:8px;
+}
+
+.speech_check{
+    border:2px solid #05051b;
+    border-radius:8px;
+}
+.speech_padding{
+    padding:20px 5px;
+}
+#preselection {
+    max-height: 20%;
+}
+.game {
+    padding: 10px;
+    height: auto;
+    width: auto;
+}
+
+.box{
+    width:50%;
+}
+
+#play_arrow {
+    font-size:60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.play{
+    border: 2px solid #41cccc;
+    border-radius: 35px;
+    background-color : #41cccc;
+    box-shadow: 3px 3px #215a88;
+    color: white;
+    width: auto;
+    cursor:pointer;
+}
+.play:hover {
+    background-color: #348ba5;
+    border: 2px solid #348ba5;
+}
+.play:active {
+    background-color: #348ba5;
+    border: 2px solid #348ba5;
+    box-shadow: 1px 1px #1a345a;
+    transform: translateY(3px);
+  }
+
+.giveup_button{
+    padding:7px 50px;
+    font-size:21px;
+    background-color:white;
+    border:1px solid #c0c0c0;
+    border-radius: 12px;
+}
+.giveup_button:hover {
+    background-color: #f3f3f3;
+}
+.giveup_button:disabled{
+  background-color: #ffdddd;
+}
+
+.next_button{
+    padding:5px 80px;
+    font-size:24px;
+    font-weight:bolder;
+    background-color:#FF8A18;
+    border: 1px solid #FF8A18;
+    border-radius: 12px;
+}
+#next{
+    background-color:#FF8A18;
+    color:white;
+}
+#next:hover {
+    background-color:#e6771c;
+    color:white;
+}
+
+.border_bottom{
+    border-bottom: 2px solid #FF8A18;
+}
+
+div.Box{
+    border-radius: 15px;
+    border: 2px solid #c0c0c0;
+    box-shadow:3px 3px 8px #999999;
+    padding: 10px;
+    width: 500px;
+    height: 500px;
+    text-align: center;
+}
+
+.quiz {
+    width: auto;
+    height: 50%;
+    display: none;
+
+}
+
+.input_text{
+    width: 80%; 
+}
+.input_container{
+    position:relative;
+
+}
+.input_icon{
+    cursor:pointer;
+}
+
+#ans {
+    font-size: 25px;
+    color: black;
+}
+
+#position, #score {
+    font-size: 20px;
+    color: rgb(7, 13, 36);
+}
+
+#word, #sound{
+    font-size: 20px;
+    max-width: 100%;
+}
+
+#speech{
+    font-size:20px;
+    max-width: 65%;
+    margin-left:59px;
+}
+
+
